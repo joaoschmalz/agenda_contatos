@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/book.png" alt="Blue book"/>
+            <h1>Agenda de contatos</h1>
+        </header>
+        <form id="form">
+            <input type="text" id="nome-contato" placeholder="Nome"/>
+            <input type="number" id="tel-contato" max="11" placeholder="Telefone"/>
+            <img src="./images/boy.png" id="boy" onClick="selecionarGenero('boy')" class="option" title="Selecione o gênero" alt="Boy face"/>
+            <img src="./images/girl.png" id="girl" onClick="selecionarGenero('girl')" class="option" title="Selecione o gênero" alt="Girl face"/>
+            <img src="./images/shushing.png" id="shushing" onClick="selecionarGenero('shushing')" class="option" title="Selecione o gênero" alt="Shushing face"/>
+            <img src="./images/rainbow.png" id="rainbow" onClick="selecionarGenero('rainbow')" class="option" title="Selecione o gênero" alt="Rainbow flag"/>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Gênero</th>
+                </tr>
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>
+            </thead>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
