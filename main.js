@@ -23,7 +23,7 @@ function adicionaLinha() {
         let linha = '<tr>';
         linha += `<td>${nomeContato.value}</td>`;
         linha += `<td>${telContato.value}</td>`;
-        linha += `<td><img src="./images/${genero}.png"/></td>`;
+        linha += `<td><img src="./images/${genero === '' ? 'shushing' : genero}.png"/></td>`;
         linha += '</tr>';
 
         linhas += linha;
@@ -43,6 +43,7 @@ function validaTelefone(telefone) {
 function limpaForm(elemGenero) {
     nomeContato.value = '';
     telContato.value = '';
+    genero = '';
     document.getElementById(elemGenero).classList.remove('selected');
 }
 
